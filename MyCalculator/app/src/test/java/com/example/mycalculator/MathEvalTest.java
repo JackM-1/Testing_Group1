@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class MathEvalTest {
+    //Each test will prove that the function is working correctly
+    //When a test fails it is because it was meant to fail proving that it would not pass the test
     @Test
     public void testAddTrue() {
         assertEquals("5", MathEval.eval("2+3"));
@@ -31,7 +33,7 @@ public class MathEvalTest {
 
     @Test
     public void testMulFalse() {
-        assertEquals("5", MathEval.eval("2*2"));
+        assertEquals("5", MathEval.eval("3*2"));
     }
 
     @Test
